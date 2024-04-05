@@ -1,8 +1,9 @@
 .container {
     border: black 5px solid;
-    width: 640px;
-    height: 640px;
-    display:flex
+    width: 717px;
+    height: 720px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .box {
