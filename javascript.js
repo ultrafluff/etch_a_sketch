@@ -1,17 +1,25 @@
 const container = document.querySelector(".container")
 
-const div = document.createElement("div")
 
-div.classList.add("box")
-
-
-container.appendChild(div)
-
-
-
-for (let count = 0; count < 255; count++) {
-    container.appendChild(div.cloneNode(true))
+function changecolor() {
+   
 }
+
+
+
+for (let count = 0; count < 256; count++) {
+    const div = document.createElement("div")
+    div.classList.add("box")
+    container.appendChild(div)
+    div.addEventListener("mouseover", () => {
+        div.style.backgroundColor = "darkgray";
+    })
+    div.addEventListener("mouseout", () => {
+        div.style.backgroundColor = "white";
+    })
+}
+
+
 
 
 
