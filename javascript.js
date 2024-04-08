@@ -1,9 +1,14 @@
-const container = document.querySelector(".container")
+const container = document.querySelector(".container2")
 
 
 function changecolor() {
    
 }
+
+
+const button = document.querySelector("#btn")
+
+button.addEventListener("click",)
 
 
 
