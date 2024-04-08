@@ -14,9 +14,6 @@ for (let count = 0; count < 256; count++) {
     div.addEventListener("mouseover", () => {
         div.style.backgroundColor = "darkgray";
     })
-    div.addEventListener("mouseout", () => {
-        div.style.backgroundColor = "white";
-    })
 }
 
 
