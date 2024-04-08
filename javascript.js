@@ -10,7 +10,7 @@ function changecolor() {
 
 
 
-for (let count = 0; count < 265; count++) {
+for (let count = 0; count < 256; count++) {
     const div = document.createElement("div")
     div.classList.add("box")
     container.appendChild(div)
@@ -27,12 +27,23 @@ function gridpopup() {
         return
     } else if (num > 100) {
         alert("please choose a smaller grid")
-    } else {
-        return num
+        return
+    }
+    if (num == 15) {
+        for (let count = 0; count < 31; count++) {
+            const div = document.querySelector(".box")
+            container.removeChild(div)
+        }
     }
 }
 
 const button = document.querySelector("#btn")
 
 button.addEventListener("click", gridpopup)
+
+
+
+
+
+
 
